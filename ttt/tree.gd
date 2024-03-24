@@ -22,11 +22,7 @@ func ttt2() -> void:
 		rotation_degrees = random.randi_range(-rotation_max,rotation_max)
 
 func ttt3() -> void:
-	for i in 3:
-		var t = trees.instantiate()
-		t.position = $tree_pos.position
-		add_child(t)
-		rotation_degrees = random.randi_range(-rotation_max,rotation_max)
+	$"Pixil-frame-0(80)".visible = true
 
 func _ready():
 	random.randomize()
@@ -44,8 +40,10 @@ func _ready():
 			ttt()
 		if r == 2:
 			ttt2()
-		#if r == 3:
-			#ttt3()
+		if r == 3:
+			ttt3()
+	else :
+		$"Pixil-frame-0(80)".visible = true
 	
 	Auto.one_time = false
 

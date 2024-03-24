@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://lyem6unxt0rr"]
+[gd_scene load_steps=4 format=3 uid="uid://lyem6unxt0rr"]
 
 [ext_resource type="Script" path="res://ttt/tree.gd" id="1_0f6fp"]
 [ext_resource type="Texture2D" uid="uid://bqwhyb8p8nyj" path="res://img/pixil-frame-0 (79).png" id="2_ts0su"]
+[ext_resource type="Texture2D" uid="uid://cuis1ecasberr" path="res://img/pixil-frame-0 (80).png" id="3_fkm8h"]
 
 [node name="tree" type="Marker2D"]
 script = ExtResource("1_0f6fp")
@@ -14,4 +15,11 @@ metadata/_edit_lock_ = true
 
 [node name="tree_pos" type="Marker2D" parent="."]
 position = Vector2(-1, -128)
+metadata/_edit_lock_ = true
+
+[node name="Pixil-frame-0(80)" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, -180)
+rotation = -1.5708
+texture = ExtResource("3_fkm8h")
 metadata/_edit_lock_ = true
